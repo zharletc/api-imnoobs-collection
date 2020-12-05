@@ -11,9 +11,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{api-server}}",
+					"raw": "https://api.imnoobs.com",
+					"protocol": "https",
 					"host": [
-						"{{api-server}}"
+						"api",
+						"imnoobs",
+						"com"
 					]
 				}
 			},
