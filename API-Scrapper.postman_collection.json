@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "33be6a31-ae83-4f89-8fde-426a4da656b6",
+		"name": "API-Scrapper",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Dashboard",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-server}}",
+					"host": [
+						"{{api-server}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OLX - Get Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-server}}/olx/v1/get/products?url=https://www.olx.co.id/mobil-bekas_c198&loop=1",
+					"host": [
+						"{{api-server}}"
+					],
+					"path": [
+						"olx",
+						"v1",
+						"get",
+						"products"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://www.olx.co.id/mobil-bekas_c198"
+						},
+						{
+							"key": "loop",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OLX - Index List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-server}}/olx/v1/get/index",
+					"host": [
+						"{{api-server}}"
+					],
+					"path": [
+						"olx",
+						"v1",
+						"get",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detik - News Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "url",
+							"value": "https://oto.detik.com/indeks",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{api-server}}/detik/v1/get/news?url=https://finance.detik.com/indeks",
+					"host": [
+						"{{api-server}}"
+					],
+					"path": [
+						"detik",
+						"v1",
+						"get",
+						"news"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://finance.detik.com/indeks"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detik - Index List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api-server}}/detik/v1/get/index",
+					"host": [
+						"{{api-server}}"
+					],
+					"path": [
+						"detik",
+						"v1",
+						"get",
+						"index"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
