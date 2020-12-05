@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "33be6a31-ae83-4f89-8fde-426a4da656b6",
-		"name": "API-Scrapper",
+		"name": "API-Imnoobs",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -25,9 +25,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{api-server}}/olx/v1/get/products?url=https://www.olx.co.id/mobil-bekas_c198&loop=1",
+					"raw": "https://api.imnoobs.com/olx/v1/get/products?url=https://www.olx.co.id/mobil-bekas_c198&loop=1",
+					"protocol": "https",
 					"host": [
-						"{{api-server}}"
+						"api",
+						"imnoobs",
+						"com"
 					],
 					"path": [
 						"olx",
@@ -55,9 +58,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{api-server}}/olx/v1/get/index",
+					"raw": "https://api.imnoobs.com/olx/v1/get/index",
+					"protocol": "https",
 					"host": [
-						"{{api-server}}"
+						"api",
+						"imnoobs",
+						"com"
 					],
 					"path": [
 						"olx",
@@ -89,9 +95,12 @@
 					]
 				},
 				"url": {
-					"raw": "{{api-server}}/detik/v1/get/news?url=https://finance.detik.com/indeks",
+					"raw": "https://api.imnoobs.com/detik/v1/get/news?url=https://finance.detik.com/indeks",
+					"protocol": "https",
 					"host": [
-						"{{api-server}}"
+						"api",
+						"imnoobs",
+						"com"
 					],
 					"path": [
 						"detik",
@@ -115,9 +124,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{api-server}}/detik/v1/get/index",
+					"raw": "https://api.imnoobs.com/detik/v1/get/index",
+					"protocol": "https",
 					"host": [
-						"{{api-server}}"
+						"api",
+						"imnoobs",
+						"com"
 					],
 					"path": [
 						"detik",
