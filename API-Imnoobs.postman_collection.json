@@ -28,7 +28,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.imnoobs.com/olx/v1/get/products?url=https://www.olx.co.id/mobil-bekas_c198&loop=1",
+					"raw": "https://api.imnoobs.com/olx/v1/get/products?url=https://www.olx.co.id/disewakan-bangunan-komersil_c5156&loop=1",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -44,7 +44,7 @@
 					"query": [
 						{
 							"key": "url",
-							"value": "https://www.olx.co.id/mobil-bekas_c198"
+							"value": "https://www.olx.co.id/disewakan-bangunan-komersil_c5156"
 						},
 						{
 							"key": "loop",
@@ -98,7 +98,7 @@
 					]
 				},
 				"url": {
-					"raw": "https://api.imnoobs.com/detik/v1/get/news?url=https://finance.detik.com/indeks",
+					"raw": "https://api.imnoobs.com/detik/v1/get/news?url=https://finance.detik.com/indeks?date=12/01/2020",
 					"protocol": "https",
 					"host": [
 						"api",
@@ -114,7 +114,7 @@
 					"query": [
 						{
 							"key": "url",
-							"value": "https://finance.detik.com/indeks"
+							"value": "https://finance.detik.com/indeks?date=12/01/2020"
 						}
 					]
 				}
@@ -139,6 +139,115 @@
 						"v1",
 						"get",
 						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kompas - Index List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.imnoobs.com/kompas/v1/get/index",
+					"protocol": "https",
+					"host": [
+						"api",
+						"imnoobs",
+						"com"
+					],
+					"path": [
+						"kompas",
+						"v1",
+						"get",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kompas - Get News",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.imnoobs.com/kompas/v1/get/news?url=https://indeks.kompas.com/?site=nasional%26page=10",
+					"protocol": "https",
+					"host": [
+						"api",
+						"imnoobs",
+						"com"
+					],
+					"path": [
+						"kompas",
+						"v1",
+						"get",
+						"news"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://indeks.kompas.com/?site=nasional%26page=10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tribun - Index List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.imnoobs.com/tribun/v1/get/index",
+					"protocol": "https",
+					"host": [
+						"api",
+						"imnoobs",
+						"com"
+					],
+					"path": [
+						"tribun",
+						"v1",
+						"get",
+						"index"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tribun - Get News",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.imnoobs.com/tribun/v1/get/news?url=https://www.tribunnews.com/index-news?date=2020-12-7",
+					"protocol": "https",
+					"host": [
+						"api",
+						"imnoobs",
+						"com"
+					],
+					"path": [
+						"tribun",
+						"v1",
+						"get",
+						"news"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "url",
+							"value": "https://www.tribunnews.com/index-news?date=2020-12-7"
+						}
 					]
 				}
 			},
